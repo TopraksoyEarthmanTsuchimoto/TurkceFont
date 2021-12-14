@@ -9,6 +9,9 @@
         src: url(Topraksoy.otf);
       }
       /* @import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@200&display=swap'); */ /*textarea için çalışmadı*/
+      *{
+        box-sizing: border-box;
+      }
       div{
         position: fixed;
         top: 2vmin;
@@ -42,6 +45,10 @@
         letter-spacing: 0.1vmin;
         overflow: auto;
         white-space: nowrap;
+      }
+      @media (min-width: 800px) {
+        textarea{width:62vw;}
+        p{width:62vw;}
       }
     </style>
   </head>

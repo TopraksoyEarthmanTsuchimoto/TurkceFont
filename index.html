@@ -33,24 +33,29 @@
         border: 2px solid #d9dee4;
         white-space: nowrap;
       }
-      p{
+      .sonucDiv{
         position: fixed;
         top: 34.5vh;
         width:90vmin;
         height:34.4vh;
         right: 50%; transform: translateX(50%); /* margin: auto; */
+        display: flex;
+        flex-direction: row-reverse; /* Sağ üstten başla */
+        align-items: flex-start;
+        background-color: white;
+        border-radius: 4px;
+        border: 2px solid #d9dee4;
+        overflow: auto;
+      }
+      p{
+        display: block;
         font-family: turkceFont;
         text-align: right;
         text-align-last: right;
         text-indent:0px;
-        background-color: white;
-        border-radius: 4px;
-        border: 2px solid #d9dee4;
         font-size: 4.5vmin;
         letter-spacing: 0.1vmin;
-        overflow: auto;
-        white-space: pre-wrap;
-
+        white-space: pre-line;
       }
       @media (min-width: 900px) {
         textarea{width:62vw;}
@@ -72,7 +77,9 @@
       <textarea type="text" id="burayaYaz" onfocus="temizle()" oninput="donustur()">Buraya metin yapıştır ya da kendin bir şeyler yaz...
 Not: Sayıları rakamla değil yazıyla girmelisin.</textarea>
     </div>
-    <p id="sonuc"></p>
+    <div class="sonucDiv">
+      <p id="sonuc"></p>
+    </div>
     <a href="Topraksoy.otf">Kök-Türkçe Font'u karşı uçtan al (download)</a>
     <script>
     function temizle() {

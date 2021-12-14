@@ -51,6 +51,14 @@
         textarea{width:62vw;}
         p{width:62vw;}
       }
+      a{
+        position: fixed; top:70vmin;
+        left: 50%; transform: translateX(-50%);
+        color: #24292f;
+      }
+      a:hover{color: #d9dee4;}
+      a:active{color: darkgrey;}
+      a:visited{color: #24292f;}
     </style>
   </head>
   <body style="background-color: #f6f8fa; color: #24292f;">
@@ -58,7 +66,7 @@
       <textarea type="text" id="burayaYaz" onfocus="temizle()" oninput="donustur()">Buraya metin yapıştır ya da kendin bir şeyler yaz...</textarea>
     </div>
     <p id="sonuc"></p>
-
+    <a href="#">Türkçe Font'u uçtanal (indir)</a>
     <script>
     function temizle() {
       const x = document.getElementById("burayaYaz").value;

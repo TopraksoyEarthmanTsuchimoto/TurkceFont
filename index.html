@@ -55,11 +55,17 @@
   </head>
   <body style="background-color: #f6f8fa; color: #24292f;">
     <div class="">
-      <textarea type="text" id="burayaYaz" oninput="donustur()">Buraya metin yapıştır ya da kendin bir şeyler yaz...</textarea>
+      <textarea type="text" id="burayaYaz" onfocus="temizle()" oninput="donustur()">Buraya metin yapıştır ya da kendin bir şeyler yaz...</textarea>
     </div>
     <p id="sonuc"></p>
 
     <script>
+    function temizle() {
+      const x = document.getElementById("burayaYaz").value;
+      if (x=="Buraya metin yapıştır ya da kendin bir şeyler yaz...") {
+        document.getElementById("burayaYaz").value="";
+      }
+    }
     function donustur() {
       const x = document.getElementById("burayaYaz").value;
       const lines = x.split("\n");

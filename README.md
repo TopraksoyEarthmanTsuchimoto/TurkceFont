@@ -1,4 +1,4 @@
-# Öz Türkçe Font | Bilgekılınç Topraksoy düzenlemesi
+# Öz Türkçe Font | Bilgekılınç Topraksoy
 
 ### Konuştuğumuz dil Türkçe ise onu yazarken de Türk harfleri kullanmak gerekir.
 Bu düşünceyle yola çıkarak titiz ve yoğun bir çalışma sonucunda Kök-Türk harflerini günümüz için kullanılabilir hãle getirdik.

@@ -9,18 +9,18 @@
         font-family: turkceFont;
         src: url(Topraksoy.otf);
       }
-      /* @import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@200&display=swap'); */ /*textarea için çalışmadı*/
+      @import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@200&display=swap'); /*textarea için çalışmadı*/
       *{
         box-sizing: border-box;
       }
       div{
         position: fixed;
-        top: 2vmin;
+        top: 2vh;
         left: 50%; transform: translateX(-50%); /* margin: auto; */
       }
       textarea{
         width:90vmin;
-        height:34.4vmin;
+        height:34.4vh;
         resize: none;
         overflow: auto;
         font-size: 3vmin;
@@ -33,9 +33,9 @@
       }
       p{
         position: fixed;
-        top: 35vmin;
+        top: 35vh;
         width:90vmin;
-        height:34.4vmin;
+        height:34.4vh;
         left: 50%; transform: translateX(-50%); /* margin: auto; */
         font-family: turkceFont;
         text-align: right;
@@ -47,14 +47,15 @@
         overflow: auto;
         white-space: nowrap;
       }
-      @media (min-width: 800px) {
+      @media (min-width: 900px) {
         textarea{width:62vw;}
         p{width:62vw;}
       }
       a{
-        position: fixed; top:70vmin;
+        position: fixed; top:75vh;
         left: 50%; transform: translateX(-50%);
         color: #24292f;
+        font-style: "Rokkitt";
       }
       a:hover{color: #d9dee4;}
       a:active{color: darkgrey;}

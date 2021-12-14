@@ -8,6 +8,7 @@
         font-family: turkceFont;
         src: url(Topraksoy.otf);
       }
+      @import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@200&display=swap');
       div{
         position: fixed;
         top: 0px;
@@ -16,6 +17,10 @@
       textarea{
         width:90vmin;
         height:34.4vmin;
+        resize: none;
+        overflow: auto;
+        font-size: 3.5vmin;
+        font-family: 'Rokkitt', serif;
       }
       p{
         position: fixed;
@@ -30,12 +35,13 @@
         border: 2px solid #d9dee4;
         font-size: 4.5vmin;
         letter-spacing: 0.1vmin;
+        overflow: auto;
       }
     </style>
   </head>
   <body style="background-color: #f6f8fa; color: #24292f;">
     <div class="">
-      <textarea type="text" id="burayaYaz" oninput="donustur()"></textarea>
+      <textarea type="text" id="burayaYaz" oninput="donustur()">Buraya metin yapıştır ya da kendin bir şeyler yaz...</textarea>
     </div>
     <p id="sonuc"></p>
 

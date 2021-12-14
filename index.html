@@ -3,8 +3,56 @@
   <head>
     <meta charset="utf-8">
     <title>Kök Türkçe Metin Dönüştürücü</title>
+    <style>
+      @font-face {
+        font-family: turkceFont;
+        src: url(Topraksoy.otf);
+      }
+      textarea{
+        width:90vmin;
+        height:34.4vmin;
+        margin: auto;
+      }
+      p{
+        width:90vmin;
+        height:34.4vmin;
+        margin: auto;
+        font-family: turkceFont;
+        text-align: right;
+      }
+    </style>
   </head>
   <body style="background-color: #f6f8fa; color: #24292f;">
-<p>AAA123321bbb</p>
+    <textarea type="text" id="burayaYaz" oninput="donustur()"></textarea>
+
+    <p id="sonuc"></p>
+
+    <script>
+    function donustur() {
+      const x = document.getElementById("burayaYaz").value;
+      const lines = x.split("\n");
+      let j;
+      for(j=0; j<lines.length; j++){
+      	let theLineToBeReversed = lines[j];
+        let reversed = "";
+      	let i;
+      	for(i=0; i<theLineToBeReversed.length; i++){
+       		reversed = reversed + theLineToBeReversed[theLineToBeReversed.length-1-i];
+      	}
+        lines[j] = reversed;
+      }
+      let result = "";
+      let k;
+      for (k=0; k<lines.length; k++){
+      	if(k==0){
+        	result = result + lines[k];
+        } else {
+        	result = result + "<br>" + lines[k];
+        }
+      }
+
+      document.getElementById("sonuc").innerHTML = result.toLowerCase();
+    }
+    </script>
   </body>
 </html>

@@ -8,11 +8,13 @@
         font-family: turkceFont;
         src: url(Topraksoy.otf);
       }
+      div{
+        margin: auto;
+      }
       textarea{
         width:90vmin;
         height:34.4vmin;
-        /*margin: auto;*/ /*bununla ortalamadı*/
-        left: 50%; transform: translateX(-50%);
+        /*left: 50%; transform: translateX(-50%);*/
       }
       p{
         width:90vmin;
@@ -28,8 +30,9 @@
     </style>
   </head>
   <body style="background-color: #f6f8fa; color: #24292f;">
-    <textarea type="text" id="burayaYaz" oninput="donustur()"></textarea>
-
+    <div class="">
+      <textarea type="text" id="burayaYaz" oninput="donustur()"></textarea>
+    </div>
     <p id="sonuc"></p>
 
     <script>
